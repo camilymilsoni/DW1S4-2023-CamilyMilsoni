@@ -1,0 +1,48 @@
+img {
+    opacity: 0.5;
+}
+  
+img:hover {
+    opacity: 1.0;
+}
+
+.opac1{
+    background-color: green;
+    opacity: 1.0;
+}
+
+.opac2{
+    background-color: green;
+    opacity: 0.8;    
+}
+
+.opac3{
+    background-color: green;
+    opacity: 0.6;       
+}
+
+.opac4{
+    background-color: green;
+    opacity: 0.4; 
+}
+
+.opac5{
+    background-color: green;
+    opacity: 0.2;   
+}
+
+.rgba1{
+    background-color: rgba(0, 128, 0, 0.8);
+}
+
+.rgba2{
+    background-color: rgba(0, 128, 0, 0.6);
+}
+
+.rgba3{
+    background-color: rgba(0, 128, 0, 0.4);
+}
+
+.rgba4{
+    background-color: rgba(0, 128, 0, 0.2);
+}

@@ -1,0 +1,23 @@
+body{
+    background-color: lightblue;
+    background-image: url("imagens/gato.png");
+    background-repeat: no-repeat;
+    background-position: 120% 160%;
+    background-size: 42%;
+}
+
+.secao1{
+    background-color: lightcoral;
+}
+
+.secao2{
+    background-color: rgb(85, 85, 85);
+    background-image: url("imagens/gato.png");
+    background-repeat: round;
+    background-size: 3%;
+    color:blue;
+}
+
+.secao3{
+    background-color: rgba(144, 238, 144, 0.5);
+}

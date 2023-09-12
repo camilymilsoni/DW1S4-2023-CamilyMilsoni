@@ -1,0 +1,23 @@
+.corVerdeClaro{
+    background-color: lightgreen;
+}
+
+.corVerde{
+    background-color: green;
+}
+
+.corVerdeEscuro{
+    background-color: darkgreen;
+}
+
+.corVermelhoMedio{
+    background-color: rgb(207, 22, 22);
+}
+
+.corVermelho{
+    background-color: red;
+}
+
+.corVermelhoEscuro{
+    background-color: darkred;
+}
