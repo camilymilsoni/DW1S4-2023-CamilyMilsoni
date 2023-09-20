@@ -1,0 +1,17 @@
+h2{
+    text-align: center;    
+}
+
+.secao1{
+    border: 1vh solid black;
+    font-size: 2vw;
+    width: 65%;
+    background-color: white;
+}
+
+.secao2{
+    border: 6px solid black;
+    font-size: 14pt;
+    width: 620px;
+    background-color: white;
+}

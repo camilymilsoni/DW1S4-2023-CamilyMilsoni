@@ -1,0 +1,39 @@
+.secao1{
+    font-family: 'Lobster', cursive;
+    border-top: 2vh solid blue;
+    border-bottom: 2vh solid blue;
+    text-align: start;
+    background-color: lightgreen;
+    font-size: 2vw;
+    padding: 2%;
+}
+
+.secao2{
+    font-family: 'Lobster', cursive;
+    border-top: 2vh solid brown;
+    border-bottom: 2vh solid brown;
+    text-align: end;
+    background-color: lightcoral;
+    font-size: 2vw;
+    padding: 2%;
+}
+
+.img1{
+    width: 14vw;
+    height: 9vw;
+}
+
+.img2{
+    width: 16vw;
+    height: 11vw;
+}
+
+.img3{
+    width: 20vw;
+    height: 13vw;
+}
+
+.img4{
+    width: 23vw;
+    height: 15vw;
+}
