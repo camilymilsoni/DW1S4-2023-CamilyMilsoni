@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 2</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="secaoCorpo">
+        <h1>Praticando 2 - Formulário HTML Estilizado</h1>
+        <form>
+            <div class="secaoInformacao">
+                <div class="secao1">
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="secao2">
+                    <input type="text" name="nome" id="nome" value="Camily">
+                </div>
+            </div>
+            <div class="secaoInformacao">
+                <div class="secao1">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="secao2">
+                    <input type="email" name="email" id="email" placeholder="seu@email.aqui">
+                </div>
+            </div>
+            <div class="secaoInformacao">
+                <div class="secao1">
+                    <label for="marca">Marca de carro preferida</label>
+                </div>
+                <div class="secao2">
+                    <select name="marca" id="marca">
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="ford">Ford</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="honda">Honda</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="renault">Renault</option>
+                        <option value="peugeot">Peugeot</option>
+                        <option value="jeep">Jeep</option>
+                    </select>
+                </div>
+            </div>
+            <div class="secaoInformacao">
+                <div class="secao1">
+                    <label for="obs">Observações</label>
+                </div>
+                <div class="secao2">
+                    <textarea name="obs" id="obs" rows="5" cols="30"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="secaoInformacao">
+                <div class="secao1">
+                    <label for="linguagem">Linguagem Web favorita:</label>
+                </div>
+                <div class="secao2">
+                    <span>
+                        <input type="radio" id="html" name="linguagem" value="HTML">
+                        <label for="html"><img src="https://static-00.iconduck.com/assets.00/html5-original-wordmark-icon-182x256-tb8b3w0c.png" alt="Logo HTML5" width="8%"></label>
+                    </span>
+                    <span>
+                        <input type="radio" id="css" name="linguagem" value="CSS">
+                        <label for="css"><img src="https://static-00.iconduck.com/assets.00/css3-original-wordmark-icon-183x256-48enjpns.png" alt="Logo CSS3" width="8%"></label>
+                    </span>
+                    <span>
+                        <input type="radio" id="javascript" name="linguagem" value="JavaScript">
+                        <label for="javascript"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" alt="Logo JS" width="8.1%"></label>
+                    </span>
+                </div>
+            </div>
+            <br>
+            <div class="secaoInformacao">
+                <div class="secao1">
+                    <label for="filme">Filmes que eu quero ver quando lançar:</label>
+                </div>
+                <div class="secao2">
+                    <div>
+                        <input type="checkbox" id="filme1" name="filme" value="AvengersKangDinasty">
+                        <label for="filme1"><a href="https://www.imdb.com/title/tt21357150/" target="_blank">Avengers: The Kang Dinasty</a></label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="filme2" name="filme" value="Aquaman2">
+                        <label for="filme2"><a href="https://www.imdb.com/title/tt9663764/" target="_blank">Aquaman 2: O Reino Perdido</a></label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="filme3" name="filme" value="Marvels">
+                        <label for="filme3"><a href="https://www.imdb.com/title/tt10676048/" target="_blank">The Marvels</a></label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="filme4" name="filme" value="Deadpool3">
+                        <label for="filme4"><a href="https://www.imdb.com/title/tt6263850/" target="_blank">Deadpool 3</a></label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="secaoInformacao">
+                <div class="secao1">
+                    <button type="submit" value="enviar">Enviar</button>
+                </div>
+                <div class="secao2">
+                    <button type="reset" value="limpar">Limpar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <p><a href="menu.html">Voltar ao menu aula</a></p>
+</body>
+</html>
