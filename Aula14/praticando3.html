@@ -8,7 +8,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         .caixa {
-            width: 15vw;
+            width: 12vw;
             height: 4vw;
             border: 0.3vw solid black;
             cursor: pointer;
@@ -23,7 +23,7 @@
     <div class="container">
         <h1>Praticando 3 - JavaScript - Cores (click e mouse)</h1>
 
-        <div class="row mt-5">
+        <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3 mt-5">
             <div class="col">
                 <div class="caixa bg-danger" onclick="mudarCorFundo(this)" onmouseover="previewCorFundo(this)" onmouseout="voltarCorFundo()"></div>
             </div>
@@ -43,8 +43,6 @@
         <div class="my-3">
             <button class="btn btn-secondary fs-4" onclick="voltarCorFundoOriginal()">Reset</button>
         </div>
-
-        <p><a href="menu.html">Voltar ao menu aula</a></p>
     </div>
 
     <div id="preview" class="text-center fs-1 fw-bold"><i>Preview</i></div>
