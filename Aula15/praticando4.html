@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .quadrado {
+            width: 7vw;
+            height: 7vw;
+            border: 0.3vw solid black;
+            display: inline-block;
+            margin: 0.7vw;
+            cursor: pointer;
+            position: relative;
+        }
+
+        #quadrado1{
+            background-color: red;
+        }
+
+        #quadrado2{
+            background-color: blue;
+        }
+
+        #quadrado3{
+            background-color: green;
+        }
+
+        mark{
+            margin: 0.2vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container m-5 mt-3">
+        <h1>Praticando 4 - Mini-game JS</h1>
+        <p><a href="menu.html">Voltar ao menu aula</a></p>
+        <h4><u>Instruções:</u></h4>
+        <ol class="my-3">
+            <h5><li>Clique em um dos quadrados coloridos</li></h5>
+            <h5><li>Depois use as teclas <mark>W</mark><mark>A</mark><mark>S</mark><mark>D</mark> para movimentar os elementos para cima, esquerda, baixo e direita respectivamente</li></h5>
+        </ol>
+        <div class="text-center my-4"><img src="wasd.jpg" alt="Teclas WASD"></div>
+        <div id="secaoQuadrado">
+            <div class="quadrado" id="quadrado1"></div>
+            <div class="quadrado" id="quadrado2"></div>
+            <div class="quadrado" id="quadrado3"></div>
+        </div>
+    </div>
+
+    <script>
+        let quadradoSelecionado = null;
+        let posicoesIniciais = {};
+    
+        const secaoQuadrado = document.getElementById('secaoQuadrado');
+        const quadrados = document.querySelectorAll('.quadrado');
+    
+        quadrados.forEach(quadrado => {
+            quadrado.style.top = '0';
+            quadrado.style.left = '0';
+
+            quadrado.addEventListener('click', () => {
+            if (quadradoSelecionado === quadrado) {
+                quadradoSelecionado.style.borderColor = 'black';
+                quadradoSelecionado = null;
+                quadrado.style.top = '0';
+                quadrado.style.left = '0';
+            } else if (quadradoSelecionado === null) {
+                if (quadradoSelecionado) {
+                    quadradoSelecionado.style.borderColor = 'black';
+                }
+                quadradoSelecionado = quadrado;
+                quadradoSelecionado.style.borderColor = 'yellow';
+            } else {
+                alert('Um quadrado já está selecionado. Desselecione-o antes de selecionar outro.');
+            }
+          });
+            posicoesIniciais[quadrado.id] = { top: '0', left: '0' };
+        });
+    
+        document.addEventListener('keydown', (e) => {
+            if (quadradoSelecionado) {
+                const estiloQuadrado = quadradoSelecionado.style;
+                const top = parseFloat(estiloQuadrado.top);
+                const left = parseFloat(estiloQuadrado.left);
+                const qtdMovimento = 10;
+    
+                if (e.key === 'w') {
+                    estiloQuadrado.top = (top - qtdMovimento) + 'px';
+                } else if (e.key === 'a') {
+                    estiloQuadrado.left = (left - qtdMovimento) + 'px';
+                } else if (e.key === 's') {
+                    estiloQuadrado.top = (top + qtdMovimento) + 'px';
+                } else if (e.key === 'd') {
+                    estiloQuadrado.left = (left + qtdMovimento) + 'px';
+                }
+            }
+        });
+    </script>
+       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

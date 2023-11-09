@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        #lampada{
+            width: 20vw;
+            height: 30vw;
+            background-image: url("lampada.png");
+            background-size: 20vw;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="ms-5">Praticando 1 - Lâmpada</h1>
+
+    <div id="lampada" class="mx-auto mt-5"></div>
+    <h3 id="lampadaTexto" class="text-center">Lâmpada apagada</h3>
+
+    <p><a href="menu.html">Voltar ao menu aula</a></p>
+
+    <script>
+        document.getElementById('lampada').addEventListener('mouseover', acenderLampada);
+        document.getElementById('lampada').addEventListener('mouseout', apagarLampada);
+
+        function acenderLampada() {
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+            document.getElementById('lampada').style.backgroundImage = "url('lampada-acesa.png')";
+            document.getElementById('lampadaTexto').textContent = "Lâmpada acesa";
+        }
+
+        function apagarLampada() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+            document.getElementById('lampada').style.backgroundImage = "url('lampada.png')";
+            document.getElementById('lampadaTexto').textContent = "Lâmpada apagada";
+        }
+    </script>
+</body>
+</html>
