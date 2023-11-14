@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#lampada").mouseover(function() {
+                $("body").css({
+                    "background-color": "white",
+                    "color": "black"
+                });
+                $("#lampada").css("background-image", "url('lampada-acesa.png')");
+                $("#lampadaTexto").text("Lâmpada acesa");
+            });
+
+            $("#lampada").mouseout(function() {
+                $("body").css({
+                    "background-color": "black",
+                    "color": "white"
+                });
+                $("#lampada").css("background-image", "url('lampada.png')");
+                $("#lampadaTexto").text("Lâmpada apagada");
+            });
+        });
+    </script>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        #lampada{
+            width: 20vw;
+            height: 30vw;
+            background-image: url("lampada.png");
+            background-size: 20vw;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="ms-5">Praticando 3 - Lâmpada</h1>
+
+    <div id="lampada" class="mx-auto mt-5"></div>
+    <h3 id="lampadaTexto" class="text-center">Lâmpada apagada</h3>
+
+    <p><a href="menu.html">Voltar ao menu aula</a></p>
+</body>
+</html>
